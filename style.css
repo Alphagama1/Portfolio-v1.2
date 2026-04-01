@@ -1,0 +1,279 @@
+/* General */
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg,#0f172a,#1e293b);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s ease-out;
+}
+
+/* Navbar */
+.navbar {
+  
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  backdrop-filter: blur(1px);
+  background: rgba(15,23,42,0.6);
+  z-index: 100;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+  margin-right: 55px;
+}
+
+.navbar a:hover {
+  color: #3b82f6;
+  transform: scale(1.1);
+}
+/* Mobile Responsive */
+@media (max-width:768px){
+  .navbar {
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-content {
+  position: relative;
+  background: rgba(255,255,255,0.05);
+  padding: 50px;
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 0 30px rgba(59,130,246,0.4);
+  animation: float 3s ease-in-out infinite;
+}
+
+.hero h1 {
+  font-size: 52px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 22px;
+  margin: 10px 0;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 15px 30px;
+  background: #3b82f6;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+  box-shadow: 0 0 15px #3b82f6;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 30px #3b82f6;
+}
+
+/* Projects */
+.projects {
+  padding: 80px 50px;
+  background: rgba(255,255,255,0.05);
+}
+
+.projects h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.project-card {
+  background: rgba(255,255,255,0.1);
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s;
+}
+
+.project-card img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px #3b82f6;
+}
+
+.project-link {
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project-link:hover {
+  text-shadow: 0 0 15px #3b82f6;
+}
+
+/* Skills */
+.skills {
+  padding: 80px 50px;
+  background: rgba(255,255,255,0.05);
+}
+
+.skills h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.skill-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.skill-grid span {
+  background: rgba(59,130,246,0.3);
+  padding: 10px 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+}
+
+.skill-grid span:hover {
+  transform: scale(1.1);
+  background: rgba(59,130,246,0.6);
+}
+
+.contact-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.contact-btn {
+  display: inline-block;
+  padding: 20px 40px; /* bada aur centered feel */
+  background: #3b82f6;
+  color: white;
+  font-weight: bold;
+  border-radius: 15px;
+  text-decoration: none;
+  box-shadow: 0 0 15px #3b82f6;
+  transition: all 0.3s ease;
+  animation: floatContact 2.5s ease-in-out infinite;
+}
+
+.contact-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 30px #3b82f6, 0 0 60px #2563eb;
+}
+.contact {
+    visibility: visible;
+}
+.contact  {
+    margin-left: 10px;
+
+  }
+
+ .backbtn{
+display: flex;
+align-items: right;
+justify-content: right;
+list-style: none;
+ text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+  margin-right: 55px;
+
+ padding: 2px 5px;
+  backdrop-filter: blur(10px);
+  background: #0f172a;
+  z-index: 100;
+   list-style: none;
+   overflow-x: hidden;
+   color: #ecedee;
+  transform: scale(1.1);
+ }
+ .ul_1{
+
+display: flex;
+align-items: right;
+justify-content: right;
+list-style: none;
+ text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+  margin-right: 55px;
+
+ padding: 2px 5px;
+  backdrop-filter: blur(10px);
+  background: #0f172a;
+  z-index: 100;
+   list-style: none;
+   overflow-x: hidden;
+   color: #ecedee;
+  transform: scale(1.1);
+ }
+
+
+/* Floating bounce animation for button */
+@keyframes floatContact {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+/* Floating Animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+/* Responsive */
+@media (max-width:768px){
+  .navbar { flex-direction: column; gap: 15px; padding: 20px; }
+  .hero-content { padding: 30px; }
+  .hero h1 { font-size: 38px; }
+  .hero p { font-size: 18px; }
+}
+
+/* Fade-in JS will add opacity */
